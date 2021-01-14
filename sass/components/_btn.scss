@@ -1,0 +1,148 @@
+.button-nav {
+    display: flex;
+    justify-content: center;
+
+
+
+}
+
+
+.btn-title {
+    margin-right: -8px;
+
+}
+
+.container {
+    &.btn-title:last-child {margin-right: 0;}
+    
+}
+
+.btn-primary {
+
+    color: $secondary-background-color;
+    background-color: $accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    font-style: normal;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    line-height: 1.875;
+
+    display: inline-block;
+    height: 50px;
+    padding: 10px 32px;
+    border-radius: 4px;
+    border: inherit;
+
+
+
+
+
+}
+
+.button-porfolio {
+    color: $primary-text-color;
+    display: inline-block;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.6;
+    border: inherit;
+    border-radius: 4px;
+    padding: 6px 22px;
+    margin: 8px;
+
+    border: 1px solid transparent;
+    cursor: pointer;
+
+
+
+}
+
+.container-porfolio-btn {
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-top: 0px;
+    margin-bottom: 34px;
+}
+
+.button-porfolio{
+    &:hover, &:focus {
+        background-color: $accent-color;
+        color: $secondary-background-color;
+        box-shadow: $shadow-btn-portfolio;
+        transition: background-color $transition-duration250 $timing-function,
+        color $transition-duration250 $timing-function,
+        box-shadow $transition-duration250 $timing-function;
+    }
+
+
+
+}
+.btn-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: $primary-white-color;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    outline: none;
+
+
+
+}
+
+.btn-close-icon {
+    fill: #000000;
+
+}
+
+.btn-close {
+    &:hover .btn-close-icon,
+    &:focus .btn-close-icon {
+        fill: $accent-color;
+        transition: fill $timing-function $transition-duration250;
+    }
+    
+}
+.btn-submit {
+    width: 200px;
+    height: 50px;
+    margin: 0;
+
+    color: $primary-white-color;
+    background: $accent-color;
+    outline: none;
+
+    border-radius: 4px;
+    border: inherit;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+
+
+}
+
+.btn-submit {
+    &:hover, &:focus {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        transition: box-shadow $transition-duration250 $timing-function;
+
+    }
+    
+}

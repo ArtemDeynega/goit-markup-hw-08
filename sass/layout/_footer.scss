@@ -1,0 +1,138 @@
+.section {
+    &.footer {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    
+}
+
+.container {
+    &.footer {
+        display: flex;
+    }
+    
+}
+
+.container-footer-info {
+    display: block;
+    margin-top: 0px;
+    margin-right: 70px;
+    
+
+}
+
+.footer {
+    background-color: $background-footer-color;
+}
+
+.addres-geo {
+    color: $primary-white-color;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em
+}
+
+.footer{
+    &.addres {
+        padding-top: 20px;
+        padding-bottom: 9px;
+    }
+    
+}
+
+.address-mail{
+    &.footer {
+        display: inline;
+
+        margin-left: 0px;
+        color: rgba(255, 255, 255, 0.6);
+        padding-bottom: 0px;
+
+    }
+    
+
+}
+.address-tel {
+    &.footer {
+        display: inline;
+
+        margin-left: 0px;
+        color: rgba(255, 255, 255, 0.6);
+        padding-bottom: 0px;
+    }
+    
+}
+.address-tel{
+    &.footer {
+        display: flex;
+        padding-top: 9px;
+    }
+    
+}
+
+.footer {
+    & .section-aside-subtitle {
+        color: $primary-white-color;
+    }
+    
+}
+
+.footer {
+    &.section-aside-subtitle {
+        padding-top: 0;
+    }
+    
+}
+
+.container-footer-social {
+    margin-top: 0px;
+}
+
+.footer-social-link {
+    display: flex;
+}
+
+.social-link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    justify-content: center;
+    align-items: center;
+}
+
+.social-link {
+    &:focus {
+        background-color: $accent-color;
+        transition: background-color $transition-duration250 $timing-function;
+
+    }
+    &:hover {
+        background-color: $accent-color;
+        transition: background-color $transition-duration250 $timing-function;
+
+    }
+    
+}
+
+.social-link-title {
+    margin: 0;
+    padding-top: 20px;
+}
+
+.social-link-title {
+    &:not(:last-child) {
+        margin-right: 10px;
+
+    }
+    
+}
+
+.social-icon {
+    fill: $primary-white-color;
+
+}
