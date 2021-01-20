@@ -57,8 +57,6 @@
     border: 1px solid transparent;
     cursor: pointer;
 
-    outline: none;
-
 
 
 }
@@ -78,7 +76,6 @@
         transition: background-color $transition-duration250 $timing-function,
         color $transition-duration250 $timing-function,
         box-shadow $transition-duration250 $timing-function;
-        outline: none;
     }
 
 

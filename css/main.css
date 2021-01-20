@@ -520,19 +520,13 @@ ul {
 img {
   display: block;
   max-width: 100%;
-  height: auto;
 }
 
 .container {
-  width: 100%;
-  padding: 0 15px;
-}
-
-@media screen and (min-width: 480px) {
-  .container .container {
-    max-width: 480px;
-    margin: 0 auto;
-  }
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 .button-nav {
@@ -584,7 +578,6 @@ img {
   margin: 8px;
   border: 1px solid transparent;
   cursor: pointer;
-  outline: none;
 }
 
 .container-porfolio-btn {
@@ -603,7 +596,6 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  outline: none;
 }
 
 .btn-close {
@@ -665,6 +657,14 @@ img {
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.section-portfolio,
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 .logo {
@@ -735,7 +735,7 @@ img {
 
 .address-mail,
 .address-tel {
-  display: block;
+  display: inline-block;
   padding-bottom: 32px;
   font-family: Roboto;
   font-style: normal;
@@ -814,11 +814,6 @@ img {
   bottom: 0;
   border-radius: 2px;
   background-color: #2196F3;
-}
-
-.container.menu-container {
-  margin: 0;
-  padding: 0;
 }
 
 .icon-antenna::before {
@@ -1293,15 +1288,67 @@ img {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.header {
+  padding-top: 32px;
+  padding-bottom: 0;
+  border-bottom: 1px solid #F5F4FA;
+}
+
+.heder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header .address {
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  max-width: 1600px;
+  min-height: 600px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #000000;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../image/hero-img/header-img.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero-img/header-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .section-title-hero {
-  font-family: Roboto;
-  font-style: normal;
+  font-size: 44px;
   font-weight: 900;
-  font-size: 26px;
-  line-height: 42px;
-  letter-spacing: 0.06em;
+  font-style: normal;
   text-transform: uppercase;
-  color: #FFFF;
+  text-align: center;
+  line-height: 60px;
+  letter-spacing: 0.06em;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  color: #F5F4FA;
 }
 
 .section-aside-subtitle {
