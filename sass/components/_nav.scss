@@ -41,7 +41,7 @@
 }
 .address-mail,
 .address-tel {
-    display: inline-block;
+    display: block;
     padding-bottom: 32px;
     font-family: Roboto;
     font-style: normal;
@@ -134,4 +134,11 @@
 
 
 
+}
+.container {
+    &.menu-container {
+        margin: 0;
+        padding: 0;
+
+    }
 }
