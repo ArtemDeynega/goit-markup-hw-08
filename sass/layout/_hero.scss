@@ -17,7 +17,7 @@
 
 
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../../image/hero-img/header-mobile.jpg);
+    url(../image/hero-img/header-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
    
@@ -46,7 +46,7 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx){
         .hero {
-             background-image: url(../../image/hero-img/header-mobile@2x.jpg);
+             background-image: url(../image/hero-img/header-mobile@2x.jpg);
         }
     }
 // .section-title-hero {
