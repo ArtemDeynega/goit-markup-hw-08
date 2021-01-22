@@ -24,8 +24,9 @@
             font-weight: 400;
             font-style: normal;
             color: $title-text-color;
-            line-height: 24px;
+            line-height: 1.714;
             margin-top: 0px;
+            letter-spacing: 0.03em;
 
     }
 }
@@ -35,20 +36,34 @@
     height: 120px;
     width: 100%;
     background-repeat: no-repeat;
-    background-color: #F5F4FA;
+    background-color: $secondary-background-color;
     background-position: center;
 
     margin-bottom: 30px;
-}
-
-.icon-antenna {
-    &::before {
-        background-image: url(../image/aside/antenna1.svg);
-        background-size: 70px;
-
+    @media screen and (min-width: 768px) {
+        max-width: 354px;
+        
+        
     }
-
 }
+
+@media screen and (min-width: 768px) {
+    .aside__list {
+        // max-width: 768px;
+        display: flex;
+        flex-wrap: wrap;
+        
+        }
+    .section-aside-list {
+        margin-right: 15px;
+        
+        flex-basis: calc((100% - 2 * 15px)/2)
+        }
+        & .container-aside {
+            margin-right: -15px;
+        }
+}
+
 // .section-aside-subtitle {
 //     padding-top: 30px;
 //     font-size: 14px;
