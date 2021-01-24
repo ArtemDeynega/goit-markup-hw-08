@@ -1,4 +1,4 @@
-@media screen and (min-width:480px) {
+
     .aside{
         padding: 60px 0;
     }
@@ -42,15 +42,19 @@
 
         margin-bottom: 30px;
 
-} }
+} 
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .aside__list :nth-child(2n) {
+        margin-right: 0;
+    }
     .aside__list {
         max-width: 768px;
         display: flex;
-        flex-wrap: wrap; 
-        margin-right: -15px;
+        flex-wrap: wrap;
+        justify-content: center; 
+        margin-right: -30px;
 
     }
 
@@ -59,17 +63,41 @@
 
         margin-right: 30px;
 
-        flex-basis:calc((100% - 2* 30px)/2);
+        flex-basis:calc((100% / 2* 30px)/2);
     }
 
     .container-aside {
-       margin-right: -30px;
        
     }
     .section-aside-subtitle {
         text-align: left;
     }
 }
+@media screen and (min-width: 1200px) {
+
+
+     .aside__list {
+         max-width: 1200px;
+         padding: 0;
+         margin: 0;
+        margin-left: auto;
+         margin-right: auto;
+         display: flex;
+         justify-content: space-between;
+     }
+     .section-aside-list {
+         width: 270px;
+     }
+     .section-aside-list:not(:last-child) {
+         margin-right: 30px;
+         margin-bottom: 0;
+     }
+     .section-aside-subtitle {
+         text-align: left;
+     }
+
+}
+    
 
 // .section-aside-subtitle {
 //     padding-top: 30px;
@@ -92,62 +120,24 @@
 //     margin-top: 0px;
 // }
 
-// .container-aside {
-//     margin-left: auto;
-//     margin-right: auto;
 
-// }
-
-// .aside__list {
-//     padding: 0;
-//     margin: 0;
-//     // display: flex;
-//     // justify-content: space-between;
-
-
-// }
-// // .section-aside-list:not(:last-child) {
-// //     margin-right: 30px;
-// // }
-
-
-// .aside-img-thumb {
-//     position: relative;
-//     // display: flex;
-//     // justify-content: center;
-//     align-items: center;
-// }
-
-// .aside-img-text-thumb {
-//     position: absolute;
-//     width: 100%;
-//     height: 70px;
-//     padding-top: 27px;
-//     bottom: 0;
-//     left: 0;
-//     background-color: $background-color-aside;
-
-//     cursor: pointer;
 
 
 
 
 // }
 
-// .aside-img-text {
-//     margin: 0;
 
-//     font-family: Roboto;
-//     font-style: normal;
-//     font-weight: bold;
-//     font-size: 14px;
-//     line-height: 16px;
-//     text-align: center;
-//     letter-spacing: 0.03em;
-//     text-transform: uppercase;
-//     color: $primary-white-color;
+
+
+
+
+
+
+
 
 // }
+
 
 
 // // .aside__list {
@@ -166,25 +156,7 @@
 // //     margin-right: 30px;
 // // }
 
-// .examples {
-//     display: flex;
-
-// }
-
-// .examples-work {
-//     display: flex;
-//     margin-top: 0px;
-//     margin-bottom: 0px;
-
-//     margin-left: auto;
-//     margin-right: auto;
-
-// }
-
-// .examples-work:not(:last-child) {
-//     margin-right: 30px;
-
-// }
+// .
 
 // // .section-aside-list::before {
 // //     content: "";
