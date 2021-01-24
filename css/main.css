@@ -1493,7 +1493,7 @@ img {
 
 @media screen and (min-width: 480px) {
   .command {
-    max-width: 480px;
+    min-width: 480px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 60px;
@@ -1573,7 +1573,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .command {
     min-width: 768px;
   }
@@ -1599,6 +1599,33 @@ img {
   .section-command-img {
     max-width: 354px;
     height: 374px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .command {
+    min-width: 1200px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .command__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .comand__section-title {
+    font-size: 36px;
+    line-height: 1.166;
+    margin-bottom: 50px;
+  }
+  .command__title--list {
+    max-width: 270px;
+    height: 428px;
+    margin-right: 30px;
+  }
+  .section-command-img {
+    width: 270px;
+    height: 260px;
   }
 }
 
