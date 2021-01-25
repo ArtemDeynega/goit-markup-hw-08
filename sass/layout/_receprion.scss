@@ -6,7 +6,7 @@
 
 .section {
     &.receprion {
-        width: 1170px;
+        max-width: 1600px;
         padding-top: 0px;
         padding-bottom: 94px;
         margin: 0 auto;
@@ -33,16 +33,14 @@
 }
 .receprion__list {
         display: flex;
+        justify-content: center;
 
     }
 
     .receprion__list--item {
         display: flex;
-        margin-top: 0px;
-        margin-bottom: 0px;
+       margin: 0;
 
-        margin-left: auto;
-        margin-right: auto;
 
     }
 
