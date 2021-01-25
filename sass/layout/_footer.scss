@@ -1,11 +1,9 @@
-@media screen and (min-width:480px) {
+@media screen and (min-width:480px){
     .footer {
         max-width: 480px;
         padding-top: 60px;
         padding-bottom: 60px;
         background-color: $background-footer-color;
-        margin-left: auto;
-        margin-right: auto;
 
 
 
@@ -218,11 +216,8 @@
 
     }
 }
-@media screen and (min-width:768px) {
+@media screen and (min-width:768px){
     .footer {
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
         max-width: 768px;
         text-align: center;
     }
@@ -242,6 +237,76 @@
     }
 
 }
+@media screen and (min-width: 1200px) {
+    .footer {
+        min-width: 1200px;
+        
+    }
+}
+// @media screen and (min-width: 1200px) {
+//     .footer {
+//         max-width: 1200px;
+//     }
+//     .container-footer-info {
+//         margin-left: 0;
+//         margin-right: 70px;
+//         margin-bottom: 0;
+//     }
+//     .container-footer-social {
+//         margin-right: 93px;
+//     }
+//     .container-footer-form {
+//         display: inline-block;
+//         vertical-align: top;
+        
+
+//     }
+//     .container-footer-info{
+//         &logo {
+//             padding: 0;
+//             text-align: left;
+//         }
+//     }
+//     .subscription-title {
+//         margin-bottom: 20px;
+
+//     }
+//     .subscription-title {
+//         text-align: left;
+//     }
+//     .form-email {
+//         width: 358px;
+
+//     }
+//     .footer-form {
+//         display: inline-block;
+//     }
+//     .btn-subscription-link {
+//             display: inline-flex;
+//             align-content: center;
+
+//             width: 200px;
+//             height: 50px;
+//             margin-left: 20px;
+
+
+//             background: $accent-color;
+
+//             border-radius: 4px;
+//             border: inherit;
+
+//             font-family: Roboto;
+//             font-style: normal;
+//             font-weight: bold;
+//             font-size: 16px;
+//             line-height: 30px;
+//             color: $primary-white-color;
+//             justify-content: center;
+//             align-items: center;
+
+//     }
+// }
+
 
 // .container {
 //     &.footer {
