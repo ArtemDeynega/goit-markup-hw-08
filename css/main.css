@@ -1902,6 +1902,27 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .footer {
+    max-width: 768px;
+    text-align: center;
+  }
+  .container-footer-info {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: 165px;
+    margin-bottom: 60px;
+  }
+  .container-footer-social {
+    display: inline-block;
+    vertical-align: top;
+  }
+  .container-footer-form {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .portfolio-heading {
   color: #212121;
   font-size: 18px;
