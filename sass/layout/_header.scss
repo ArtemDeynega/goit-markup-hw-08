@@ -1,10 +1,4 @@
-    .header {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    @media screen and (min-width: 480px) and (max-width:767px) {
+@media screen and (min-width: 480px) {
         .header {
             max-width: 480px;
             position: relative;
@@ -13,13 +7,36 @@
             padding-bottom: 6px;
             margin-left: auto;
             margin-right: auto;
+
+            @media screen and(min-width:768px) {
+                max-width: 768px;
+                padding-bottom: 26px;
+                padding-top: 26px;
+
+
+                
+            }
+        }
+        .header .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .header .logo {
-            display: inline-flex;
+            // display: inline-flex;
             margin-right: auto;
             margin-left: 0;
             padding: 0;
+            width: 134px;
+            height: 28px;
+            @media screen and(min-width: 768px) {
+                // padding: 10px 0;
+                margin-right: 88px;
+                margin-left: 0;
+
+                
+            }
         }
 
         .menu-burger {
@@ -37,7 +54,11 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            min-height: 60px;
+            @media screen and (min-width:768px) {
+                max-width: 294px;
+
+                
+            }
 
         }
 
@@ -48,6 +69,10 @@
             border: none;
             outline: none;
             background-color: transparent;
+            @media screen and(min-width:768px) {
+                display: none;
+                
+            }
         }
 
         .menu-button:hover .icon-cross,
@@ -74,34 +99,58 @@
 
 
         .menu-container {
-            max-width: 480px;
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            width: 100%;
-            // height: 254px;
-            padding-top: 60px;
-            padding-bottom: 60px;
-            text-align: center;
-            background-color: $primary-white-color;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04),
-                0px 2px 4px rgba(0, 0, 0, 0.08),
-                0px 1px 3px rgba(0, 0, 0, 0.16);
-            transition: all $transition-duration250 $timing-function;
-
+            
             &.is-open {
                 display: block;
+            }
+            @media screen and (max-width: 767px) {
+                display: none;
+                max-width: 480px;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                // height: 254px;
+                padding-top: 60px;
+                padding-bottom: 60px;
+                text-align: center;
+                background-color: $primary-white-color;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04),
+                0px 2px 4px rgba(0, 0, 0, 0.08),
+                0px 1px 3px rgba(0, 0, 0, 0.16);
+                transition: all $transition-duration250 $timing-function;
+
+                
+            }
+            @media screen and (min-width:768px) {
+                flex-grow: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
             }
 
         }
 
         .site-nav {
             margin-bottom: 60px;
+            @media screen and (min-width: 768px) {
+                margin-bottom: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+                
+            }
         }
 
         .site-list-item:not(:last-child) {
             margin-bottom: 40px;
+            @media screen and(min-width:768px) {
+                margin-bottom: 0;
+                margin-right: 50px;
+                
+            }
 
         }
 
@@ -115,10 +164,22 @@
             line-height: 1.166;
 
             letter-spacing: 0.02em;
+            @media screen and (min-width:768px) {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 1.143;
+                letter-spacing: .02em;
+
+                
+            }
 
             &.current {
                 padding-bottom: 12px;
                 color: $accent-color;
+                @media screen and(min-width:768px) {
+                    padding-bottom: 28px;
+                    
+                }
             }
 
             &.current::after {
@@ -133,8 +194,13 @@
                 background-color: $accent-color;
             }
         }
+        .header .address {
+            @media screen and(min-width:768px) {
+               margin-left: auto;
+            }
+            
+        }
 
-        .address-list,
         .address-list {
             font-family: Roboto;
             font-style: normal;
@@ -145,6 +211,22 @@
             letter-spacing: 0.02em;
 
             color: $adress-icon;
+            @media screen and(min-width:768px) {
+                // display: flex;
+                // align-items: center;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 14px;
+
+
+                letter-spacing: 0.02em;
+
+                color: #757575;
+
+                
+            }
 
         }
 
@@ -159,11 +241,20 @@
 
         .adress-item:not(:last-child) {
             margin-bottom: 16px;
+            @media screen and(min-width:768px) {
+                margin-bottom: 10px;
+                
+            }
         }
 
         .adress-icon {
             margin-right: 10px;
             fill: $adress-icon;
+            @media screen and(min-width:768px) {
+                margin-right: 8px;
+                width: 14px;
+                
+            }
         }
 
         .address-list:hover .adress-icon,
@@ -175,22 +266,6 @@
         }
     }
 
-    @media screen and (min-width: 768px) {
-        .header {
-            max-width: 7680px;
-            position: relative;
-
-            padding-top: 26px;
-            padding-bottom: 26px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .menu-button {
-            display: none;
-        }
-
-    }
 
 
     // .header {
