@@ -24,7 +24,8 @@
         }
 
         .header .logo {
-            // display: inline-flex;
+            display: inline-flex;
+            align-items: center;
             margin-right: auto;
             margin-left: 0;
             padding: 0;
@@ -177,7 +178,7 @@
                 padding-bottom: 12px;
                 color: $accent-color;
                 @media screen and(min-width:768px) {
-                    padding-bottom: 28px;
+                    padding-bottom: 0;
                     
                 }
             }
@@ -192,6 +193,10 @@
                 height: 4px;
                 border-radius: 2px;
                 background-color: $accent-color;
+                @media screen and (min-width: 768px) {
+                    bottom: -36px;
+                    
+                }
             }
         }
         .header .address {
