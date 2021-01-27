@@ -48,7 +48,7 @@
 
     .address-contact {}
 
-    .footer__address-mail {
+    .footer__address-list {
         display: block;
 
         font-family: Roboto;
@@ -62,7 +62,7 @@
         margin-bottom: 8px;
     }
 
-    .footer__address-tel {
+    .footer__address-list {
         display: block;
         font-family: Roboto;
         font-style: normal;
@@ -272,8 +272,8 @@
         }
 
         & address,
-        & .footer__address-mail,
-        & .footer__address-tel {
+        & .footer__address-list,
+        & .footer__address-list {
             text-align: left;
         }
 
@@ -429,7 +429,7 @@
 
 // }
 
-// .footer__address-mail{
+// .footer__address-list{
 //  {
 //         display: inline;
 
@@ -441,7 +441,7 @@
 
 
 // 
-// .footer__address-tel {
+// .footer__address-list {
 // 
 //         display: inline;
 

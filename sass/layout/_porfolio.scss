@@ -1,3 +1,109 @@
+.section-portfolio {
+    @media screen and (min-width:480px) {
+        
+        padding-top: 60px;
+        padding-bottom: 60px;
+        margin: 0;
+        
+    }
+}
+.button-nav{
+    @media screen and(min-width:480px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+        
+    }
+}
+
+
+
+
+
+
+
+.proect-list {
+    border: 1px solid $border-color-white;
+
+}
+.proect-list:not(:last-child) {
+    @media screen and(min-width:480px) {
+        margin-bottom: 30px;
+
+        
+    }
+}
+.portfolio-thumb {
+    @media screen and (min-width:480px){
+        position: relative;
+        overflow: hidden;
+    }
+}
+.proect-items {
+    @media screen and (min-width:768px) {
+            display: flex;
+            flex-wrap: wrap;
+    }
+
+}
+.img-porfolio {
+    @media screen and (min-width:480px){
+        width: 100%;
+    }
+}
+.card-content {
+    @media screen and(min-width:480px) {
+        padding: 20px 24px;
+        
+    }
+}
+.product-actions {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    padding: 64px 24px;
+
+
+
+
+    background-color: $product-action-color;
+    color: $product-text-action;
+
+
+
+    transform: translateY(100%);
+    transition: transform $timing-function $transition-duration250;
+    &:hover .product-actions{
+        transform: translateY(0);
+    }
+    &:focus .product-actions{
+        transform: translateY(0);
+    }
+
+}
+.porfolio-link {
+        &:hover .product-actions {
+            transform: translateY(0);
+        }
+
+        &:focus .product-actions {
+            transform: translateY(0);
+        }
+        &:hover {
+                display: block;
+                box-shadow: $shadow-portfolio-products;
+                transition: box-shadow $timing-function $transition-duration250;
+        }
+        &:focus {
+                display: block;
+                box-shadow: $shadow-portfolio-products;
+                transition: box-shadow $timing-function $transition-duration250;
+        }
+}
+
 .portfolio-heading {
     color: $primary-text-color;
     font-size: 18px;
@@ -7,7 +113,10 @@
     letter-spacing: 0.06em;
     margin-top: 0;
     margin-bottom: 4px;
+    @media screen and(min-width:480px) {
 
+        
+    }
 
 }
 
@@ -20,97 +129,6 @@
     letter-spacing: 0.03em;
 
 }
-
-.proect-items {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: -30px;
-    margin-left: -30px;
-    margin-bottom: 0px;
-    padding-top: 30px;
-
-
-}
-
-.proect-list {
-
-    margin-top: 30px;
-    margin-left: 30px;
-    flex-basis: calc(100% / 3 - 30px);
-    border: 1px solid $border-color-white
-}
-
-.img-porfolio {
-    margin-top: 0px;
-    margin-bottom: 0px;
-
-}
-
-
-.card-content {
-    padding: 20px 20px;
-
-
-}
-
-
-
-.porfolio-link{
-    &:hover {
-         display: block;
-         box-shadow: $shadow-portfolio-products;
-         transition: box-shadow $timing-function $transition-duration250;
-    }
-    &:focus {
-         display: block;
-         box-shadow: $shadow-portfolio-products;
-         transition: box-shadow $timing-function $transition-duration250;
-    }
-   
-
-}
-
-.portfolio-thumb {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-.product-actions {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-
-    padding: 64px 24px;
-
-
-
-    background-color: $product-action-color;
-    color: $product-text-action;
-
-
-
-    transform: translateY(100%);
-    transition: transform $timing-function $transition-duration250;
-
-
-}
-
-.porfolio-link{
-    &:hover .product-actions{
-        transform: translateY(0);
-    }
-    &:focus .product-actions{
-        transform: translateY(0);
-    }
-    
-
-}
-
 .product-text {
     margin: 0;
     font-family: Roboto;
@@ -120,3 +138,120 @@
     line-height: 28px;
     letter-spacing: 0.03em;
 }
+@media screen and (min-width:768px) and (max-width:1199px){
+    .proect-list:not(:nth-last-child(-n+2)) {
+        margin-bottom: 60px;
+
+    }
+    .proect-list:not(:nth-child(2n+2)) {
+        margin-right: 30px;
+
+    }
+    .proect-list {
+        flex-basis: calc(100% / 2 - 30px);
+    }
+        @media screen and(min-width:768px) and (max-width:1199px) {
+            flex-basis: calc(100% / 2 - 30px);
+        }
+    
+}
+
+// .proect-items {
+//     display: flex;
+//     flex-wrap: wrap;
+//     margin-top: -30px;
+//     margin-left: -30px;
+//     margin-bottom: 0px;
+//     padding-top: 30px;
+
+
+// }
+
+// .proect-list {
+
+//     margin-top: 30px;
+//     margin-left: 30px;
+//     flex-basis: calc(100% / 3 - 30px);
+//     border: 1px solid $border-color-white
+// }
+
+// .img-porfolio {
+//     margin-top: 0px;
+//     margin-bottom: 0px;
+
+// }
+
+
+// .card-content {
+//     padding: 20px 20px;
+
+
+// }
+
+
+
+// .porfolio-link{
+//     &:hover {
+//          display: block;
+//          box-shadow: $shadow-portfolio-products;
+//          transition: box-shadow $timing-function $transition-duration250;
+//     }
+//     &:focus {
+//          display: block;
+//          box-shadow: $shadow-portfolio-products;
+//          transition: box-shadow $timing-function $transition-duration250;
+//     }
+   
+
+// }
+
+// .portfolio-thumb {
+//     position: relative;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     overflow: hidden;
+// }
+
+// .product-actions {
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     top: 0;
+//     left: 0;
+
+//     padding: 64px 24px;
+
+
+
+//     background-color: $product-action-color;
+//     color: $product-text-action;
+
+
+
+//     transform: translateY(100%);
+//     transition: transform $timing-function $transition-duration250;
+
+
+// }
+
+// .porfolio-link{
+//     &:hover .product-actions{
+//         transform: translateY(0);
+//     }
+//     &:focus .product-actions{
+//         transform: translateY(0);
+//     }
+    
+
+// }
+
+// .product-text {
+//     margin: 0;
+//     font-family: Roboto;
+//     font-style: normal;
+//     font-weight: normal;
+//     font-size: 18px;
+//     line-height: 28px;
+//     letter-spacing: 0.03em;
+// }
