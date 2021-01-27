@@ -815,6 +815,7 @@ img {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     margin: auto;
+    width: 528px;
     min-height: 300px;
     min-width: 300px;
     background-color: #fff;
