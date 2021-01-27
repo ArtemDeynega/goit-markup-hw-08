@@ -153,6 +153,16 @@
     
 }
 @media screen and (min-width:1200px){
+    .proect-items {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -30px;
+        margin-left: -30px;
+        margin-bottom: 0px;
+        padding-top: 30px;
+
+
+    }
     .proect-list {
 
         margin-top: 30px;
@@ -160,6 +170,10 @@
         flex-basis: calc(100% / 3 - 30px);
         border: 1px solid $border-color-white
     }
+    // .proect-list:not(:nth-child(3n+3)){
+    //     margin-bottom: 30px;
+    // }
+
 }
 
 

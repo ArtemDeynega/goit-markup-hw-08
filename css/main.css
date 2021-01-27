@@ -2409,6 +2409,17 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
+  .proect-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+    margin-bottom: 0px;
+    padding-top: 30px;
+  }
   .proect-list {
     margin-top: 30px;
     margin-left: 30px;
